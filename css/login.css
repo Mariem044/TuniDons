@@ -1,0 +1,130 @@
+:root {
+      --primary-color: #28a745;
+      --primary-hover: #218838;
+      --secondary-color: #6c757d;
+      --light-gray: #f8f9fa;
+      --dark-gray: #343a40;
+    }
+    
+    body {
+      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-brand {
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+    }
+    
+    .login-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    
+    .login-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card-header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      border-bottom: none;
+    }
+    
+    .card-body {
+      padding: 2rem;
+    }
+    
+    .form-control {
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    }
+    
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+    }
+    
+    .btn-outline-primary {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    
+    .btn-outline-primary:hover {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+    
+    .divider::before, .divider::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .divider-text {
+      padding: 0 1rem;
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+    }
+    
+    footer {
+      background-color: var(--dark-gray);
+      color: white;
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+    }
+    
+    .input-group-text {
+      background-color: white;
+      border-right: none;
+    }
+    
+    .password-input {
+      border-left: none;
+    }
+    
+    .remember-me {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .forgot-password {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    
+    .forgot-password:hover {
+      color: var(--primary-color);
+    }

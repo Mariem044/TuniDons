@@ -1,0 +1,152 @@
+
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #2c3e50;
+  --success-color: #1cc88a;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --light-gray: #f8f9fc;
+  --dark-gray: #5a5c69;
+  --border-radius: 0.35rem;
+}
+
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--secondary-color) !important;
+}
+
+.container {
+  max-width: 1200px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--success-color);
+}
+
+h4 {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+  margin-bottom: 2rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.progress {
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.progress-bar {
+  background-color: var(--success-color);
+}
+
+.project-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.meta-item {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.15rem 0.5rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.meta-item h5 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.meta-item p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+.table {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: var(--success-color);
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(248, 249, 252, 0.8);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(28, 200, 138, 0.1);
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border-color: #ffeeba;
+  border-radius: var(--border-radius);
+}
+
+hr {
+  margin: 2rem 0;
+  border-top: 1px solid #e3e6f0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .project-meta {
+    grid-template-columns: 1fr;
+  }
+}
